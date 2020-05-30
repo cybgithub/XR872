@@ -1,11 +1,11 @@
-*.c       text
-*.cpp     text
-*.h       text
+*.c       text eol=lf
+*.cpp     text eol=lf
+*.h       text eol=lf
 *.s       text
 *.sct     text
 *.ld      text
 *.txt     text
-*.xml     text
+*.xml     text eol=lf
 *.py      text
 *.md      text
 *.json    text
@@ -14,3 +14,5 @@
 *.elf     binary
 *.bin     binary
 *.exe     binary
+*.sh      text eol=lf
+*.mk      text eol=lf

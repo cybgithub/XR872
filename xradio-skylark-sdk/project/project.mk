@@ -311,6 +311,9 @@ objdump: $(PROJECT).objdump
 size:
 	$(Q)$(SIZE) $(PROJECT).$(ELF_EXT)
 
+image_clean:
+	rm -rf $(IMAGE_PATH)/*
+
 clean:
 	$(Q)-rm -f $(PROJECT_LD) $(PROJECT).* *.bin $(OBJS) $(DEPS) $(ROM_SYMBOL_NAME)
 
@@ -330,7 +333,7 @@ install:
 
 build: lib all install
 
-build_clean: clean lib_clean lib_install_clean
+build_clean: clean lib_clean lib_install_clean image_clean
 
 else # __CONFIG_BOOTLOADER
 

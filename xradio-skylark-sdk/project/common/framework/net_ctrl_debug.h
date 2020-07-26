@@ -38,7 +38,7 @@
 extern "C" {
 #endif
 
-#define NET_DBG_ON      0
+#define NET_DBG_ON      1
 #define NET_INF_ON      1
 #define NET_WRN_ON      1
 #define NET_ERR_ON      1

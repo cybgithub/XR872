@@ -69,7 +69,7 @@
 extern void set_reconnect_enable(void);
 //extern int at_uart_reinit(at_serial_para_t *para);
 
-#define FUN_DEBUG_ON	0
+#define FUN_DEBUG_ON	1
 
 #if FUN_DEBUG_ON == 1
 #define FUN_DEBUG(fmt...) {\

@@ -1239,6 +1239,8 @@ static AT_ERROR_CODE wifi_handler(at_para_t *at_para)
 			return AEC_PARA_ERROR;
 		}
 
+		AT_DBG("%s, cmd_para.value %d\r\n", __func__, cmd_para.value);
+
 		if (cmd_para.value >= 0 && cmd_para.value <= 1) {
 			return at_wifi(cmd_para.value);
         } else {

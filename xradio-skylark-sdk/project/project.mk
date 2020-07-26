@@ -382,7 +382,7 @@ sign:
 	$(Q)rm -f $(SIGNATURE_DIR_NAME)/$(IMAGE_NAME).img
 endif # __CONFIG_SECURE_BOOT
 
-build: lib all image
+build: image_clean lib all image
 
 build_clean: image_clean clean lib_clean lib_install_clean
 

@@ -117,8 +117,9 @@ void atcmd_start(void)
 
 	serial_start();
 
-//	wakeup_gpio_init();
-	/* start atcmd task */
+	//	wakeup_gpio_init();
+
+    /*创建AT指令执行线程*/
 	if (OS_ThreadCreate(&g_atcmd_thread,
 		                "atcmd",
 		                atcmd_task,

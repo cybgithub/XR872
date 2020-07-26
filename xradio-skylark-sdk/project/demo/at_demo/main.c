@@ -32,8 +32,10 @@
 
 int main(void)
 {
+	/*平台初始化*/
 	platform_init();
 
+	/*AT指令任务启动*/
 	atcmd_start();
 
 	return 0;

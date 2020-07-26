@@ -32,12 +32,15 @@
 #include "kernel/os/os.h"
 
 int main(void)
-{
+{	
+	/*平台初始化*/
 	platform_init();
 
 	while (1) {
+		/*休眠10秒*/
 		OS_Sleep(10);
-		printf("Hello world! @ %u sec\n", OS_GetTicks());
+		/*打印控制台信息*/
+		printf("这是我的第一个XR872示例 @ %u sec\n", OS_GetTicks());
 	}
 	return 0;
 }

@@ -1,0 +1,39 @@
+C:\Users\Thinkpad\AppData\Local\JetBrains\CLion2020.2\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/f/XR872
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
+-- Check for working C compiler: /cygdrive/d/soft/MinGW/mingw64/bin/gcc.exe
+-- Check for working C compiler: /cygdrive/d/soft/MinGW/mingw64/bin/gcc.exe - broken
+CMake Error at /cygdrive/c/Users/Thinkpad/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/share/cmake-3.17.3/Modules/CMakeTestCCompiler.cmake:60 (message):
+  The C compiler
+
+    "/cygdrive/d/soft/MinGW/mingw64/bin/gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /cygdrive/f/XR872/cmake-build-debug/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/cygdrive/d/soft/MinGW/mingw64/bin/make.exe cmTC_25088/fast && D:/soft/MinGW/mingw64/bin/make  -f CMakeFiles/cmTC_25088.dir/build.make CMakeFiles/cmTC_25088.dir/build
+    make[1]: Entering directory 'F:/XR872/cmake-build-debug/CMakeFiles/CMakeTmp'
+    Building C object CMakeFiles/cmTC_25088.dir/testCCompiler.c.o
+    /cygdrive/d/soft/MinGW/mingw64/bin/gcc.exe    -o CMakeFiles/cmTC_25088.dir/testCCompiler.c.o   -c /cygdrive/f/XR872/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+    gcc.exe: error: /cygdrive/f/XR872/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c: No such file or directory
+    gcc.exe: fatal error: no input files
+    compilation terminated.
+    make[1]: *** [CMakeFiles/cmTC_25088.dir/build.make:86: CMakeFiles/cmTC_25088.dir/testCCompiler.c.o] Error 1
+    make[1]: Leaving directory 'F:/XR872/cmake-build-debug/CMakeFiles/CMakeTmp'
+    make: *** [Makefile:141: cmTC_25088/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/cygdrive/f/XR872/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/cygdrive/f/XR872/cmake-build-debug/CMakeFiles/CMakeError.log".

@@ -39,3 +39,7 @@
 !/lib/libwpas.a
 !/lib/libwpas_wps.a
 !/lib/libzbar.a
+**/.idea/*
+**/cmake-build-debug-mingw/*
+**/cmake-build-debug-cygwin/*
+*CMakeLists.txt
